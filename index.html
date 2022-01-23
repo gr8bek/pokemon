@@ -8,52 +8,71 @@
     <title>Pokemon</title>
   </head>
   <body>
-    <section class="container">
-      <form class="pokemon--form">
-        <input
-          class="pokemon__input--url"
-          type="text"
-          placeholder="Poster url..."
-        />
-        <input
-          class="pokemon__input--name"
-          type="text"
-          placeholder="Name..."
-          required
-        />
-        <input
-          class="pokemon__input--type"
-          type="text"
-          placeholder="Type..."
-          required
-        />
-        <input
-          class="pokemon__input--height"
-          type="text"
-          placeholder="Height..."
-          required
-        />
-        <input class="h" type="text" placeholder="Weight..." required />
+    <header class="py-5">
+      <a href="#" class="d-flex align-items-center justify-content-center">
+        <img src="img/pokemon_logo.png" alt="Pokemon" />
+      </a>
+    </header>
 
-        <button class="dashbord__button" type="submit">Add New Pokemon</button>
-      </form>
-
-      <ul class="pokemons__list">
-        <!-- <li class="pokemon">
-          <img
-            src="http://www.serebii.net/pokemongo/pokemon/001.png"
-            alt="pokemon's poster"
-            width="157"
-            height="157"
-          />
-          <h3 class="pokemon__name">Bulbasaur</h3>
-
-          <p class="pokemon__type">Grass, Poison</p>
-          <p class="pokemon__height">0.71 m</p>
-          <p class="pokemon__weight">6.9 kg</p>
-        </li> -->
-      </ul>
-    </section>
+    <main>
+      <section class="container">
+        <form class="js-pokemon-form mb-5">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <input
+                class="form-control"
+                type="text"
+                name="id"
+                placeholder="Poster ID"
+                required
+              />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                placeholder="Pokemon name"
+                required
+              />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <input
+                class="form-control"
+                type="text"
+                name="type"
+                placeholder="Types separated with comma"
+                required
+              />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <input
+                class="form-control"
+                type="number"
+                name="height"
+                placeholder="Height in cm"
+                required
+                min="0"
+              />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <input
+                class="form-control"
+                type="number"
+                name="weight"
+                placeholder="Weight in kg"
+                required
+                min="0"
+              />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <button type="submit" class="btn btn-dark w-100">ADD</button>
+            </div>
+          </div>
+        </form>
+        <div class="row row-cols-1 row-cols-md-3 g-4 pokemons__list"></div>
+      </section>
+    </main>
 
     <script src="js/pokemon.js"></script>
     <script src="js/main.js"></script>
