@@ -8,6 +8,54 @@
     <title>Pokemon</title>
   </head>
   <body>
-    <h1 text-danger>bir nima</h1>
+    <section class="container">
+      <form class="pokemon--form">
+        <input
+          class="pokemon__input--url"
+          type="text"
+          placeholder="Poster url..."
+        />
+        <input
+          class="pokemon__input--name"
+          type="text"
+          placeholder="Name..."
+          required
+        />
+        <input
+          class="pokemon__input--type"
+          type="text"
+          placeholder="Type..."
+          required
+        />
+        <input
+          class="pokemon__input--height"
+          type="text"
+          placeholder="Height..."
+          required
+        />
+        <input class="h" type="text" placeholder="Weight..." required />
+
+        <button class="dashbord__button" type="submit">Add New Pokemon</button>
+      </form>
+
+      <ul class="pokemons__list">
+        <!-- <li class="pokemon">
+          <img
+            src="http://www.serebii.net/pokemongo/pokemon/001.png"
+            alt="pokemon's poster"
+            width="157"
+            height="157"
+          />
+          <h3 class="pokemon__name">Bulbasaur</h3>
+
+          <p class="pokemon__type">Grass, Poison</p>
+          <p class="pokemon__height">0.71 m</p>
+          <p class="pokemon__weight">6.9 kg</p>
+        </li> -->
+      </ul>
+    </section>
+
+    <script src="js/pokemon.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
